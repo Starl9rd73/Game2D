@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://e8ph7wu2s52n"
+path="res://.godot/imported/MA_Originals_Various Alarms_Communicator Ring Urgent.wav-6596cebf7cfcccb9b0eccc2ef5975480.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/MA_Originals_Various Alarms_Communicator Ring Urgent.wav"
+dest_files=["res://.godot/imported/MA_Originals_Various Alarms_Communicator Ring Urgent.wav-6596cebf7cfcccb9b0eccc2ef5975480.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

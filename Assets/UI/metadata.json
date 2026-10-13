@@ -1,0 +1,22 @@
+{
+  "group_id": "3ecd1794-ebb6-4ff8-856a-eb504e212ef9",
+  "objects": [
+    {
+      "id": "a5547cad-974e-4475-b45c-a276ceb455d6",
+      "name": "base",
+      "prompt": "sound button on and off",
+      "size": {
+        "width": 48,
+        "height": 48
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/SOUND_ON.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-09-17T06:42:28.274510"
+}

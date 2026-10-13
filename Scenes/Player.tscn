@@ -1,0 +1,286 @@
+[gd_scene format=3 uid="uid://buku4qlgfffyb"]
+
+[ext_resource type="Script" uid="uid://cmm6tpfo817by" path="res://Scenes/player.gd" id="1_y6y60"]
+[ext_resource type="Texture2D" uid="uid://bu2b4fyj4mhrw" path="res://Assets/Idle/rotations/east.png" id="2_vmcrb"]
+[ext_resource type="Texture2D" uid="uid://pu5a3xkk6m7f" path="res://Assets/Idle/rotations/north.png" id="3_teras"]
+[ext_resource type="Texture2D" uid="uid://dpmiis21xl8ig" path="res://Assets/Idle/rotations/south.png" id="4_8p516"]
+[ext_resource type="Texture2D" uid="uid://4uhla6508y7p" path="res://Assets/Idle/rotations/west.png" id="5_fvoow"]
+[ext_resource type="Texture2D" uid="uid://dn48pjsssgd4" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/east/frame_000.png" id="6_v5fqo"]
+[ext_resource type="Texture2D" uid="uid://8kjskqs011un" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/east/frame_001.png" id="7_yf17c"]
+[ext_resource type="Texture2D" uid="uid://djraqocktooi0" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/east/frame_002.png" id="8_awd2i"]
+[ext_resource type="Texture2D" uid="uid://c85bcjm3cdviy" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/east/frame_003.png" id="9_o2sks"]
+[ext_resource type="Texture2D" uid="uid://dj1u6qw15pvej" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/east/frame_004.png" id="10_3rw25"]
+[ext_resource type="Texture2D" uid="uid://58tcgsujeosb" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/east/frame_005.png" id="11_u4y2r"]
+[ext_resource type="Texture2D" uid="uid://bk3tste7xyco8" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/east/frame_006.png" id="12_tbv6f"]
+[ext_resource type="Texture2D" uid="uid://bqo7spc3rd2rv" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/east/frame_007.png" id="13_vp15a"]
+[ext_resource type="Texture2D" uid="uid://b44iryi0gj2mm" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/north/frame_000.png" id="14_fayk8"]
+[ext_resource type="Texture2D" uid="uid://dlkwwdu02uamt" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/north/frame_001.png" id="15_ddly5"]
+[ext_resource type="Texture2D" uid="uid://cldb4bk1kpmru" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/north/frame_002.png" id="16_omi2y"]
+[ext_resource type="Texture2D" uid="uid://cu22gsbdci66s" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/north/frame_003.png" id="17_75iyv"]
+[ext_resource type="Texture2D" uid="uid://biqdqh6skvipu" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/north/frame_004.png" id="18_yrofn"]
+[ext_resource type="Texture2D" uid="uid://bgdynv8dufy7e" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/north/frame_005.png" id="19_5gg6q"]
+[ext_resource type="Texture2D" uid="uid://cw51pna2026ka" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/north/frame_006.png" id="20_wenux"]
+[ext_resource type="Texture2D" uid="uid://chnc7kdfsqskx" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/north/frame_007.png" id="21_vy33c"]
+[ext_resource type="Texture2D" uid="uid://bovrnf2bru2i1" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/south/frame_000.png" id="22_h1ppb"]
+[ext_resource type="Texture2D" uid="uid://wsw40jmdyotu" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/south/frame_001.png" id="23_k22kr"]
+[ext_resource type="Texture2D" uid="uid://g6ray6u60qq3" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/south/frame_002.png" id="24_h4i3a"]
+[ext_resource type="Texture2D" uid="uid://c1nsrwn1fcwi7" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/south/frame_003.png" id="25_rocfp"]
+[ext_resource type="Texture2D" uid="uid://raakqf5uqyrt" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/south/frame_004.png" id="26_uytvf"]
+[ext_resource type="Texture2D" uid="uid://dflfnvqimr6tt" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/south/frame_005.png" id="27_s7lb4"]
+[ext_resource type="Texture2D" uid="uid://bnwt7gs7unoc1" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/south/frame_006.png" id="28_ed4yo"]
+[ext_resource type="Texture2D" uid="uid://bnmptsxqhigr5" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/south/frame_007.png" id="29_fsa4a"]
+[ext_resource type="Texture2D" uid="uid://u5rqe6ybokl7" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/west/frame_000.png" id="30_6f3s4"]
+[ext_resource type="Texture2D" uid="uid://dc20ntiuk7lk6" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/west/frame_001.png" id="31_l3y8b"]
+[ext_resource type="Texture2D" uid="uid://baocc7olslebf" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/west/frame_002.png" id="32_ujsok"]
+[ext_resource type="Texture2D" uid="uid://csmrk2ypgh4jp" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/west/frame_003.png" id="33_txwsf"]
+[ext_resource type="Texture2D" uid="uid://dtf7yvucxsuj3" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/west/frame_004.png" id="34_i10l2"]
+[ext_resource type="Texture2D" uid="uid://cwngta3sm7063" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/west/frame_005.png" id="35_fgqou"]
+[ext_resource type="Texture2D" uid="uid://cdnyt3uvsrnpf" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/west/frame_006.png" id="36_01r87"]
+[ext_resource type="Texture2D" uid="uid://dw0tlyqarplpu" path="res://Assets/Run/A_small_rusty_agricultural_robot/Idle/animations/Running/west/frame_007.png" id="37_jhxql"]
+[ext_resource type="Script" uid="uid://dsqd7mydab4un" path="res://Scenes/ui.gd" id="38_ilb4b"]
+[ext_resource type="Texture2D" uid="uid://dj12ibr6ml48p" path="res://Assets/UI/MUSIC_ON/rotations/MUSIC_ON.png" id="39_tlew5"]
+[ext_resource type="Texture2D" uid="uid://dcowo7vmncpdn" path="res://Assets/UI/MUSIC_OFF/rotations/MUSIC_OFF.png" id="40_h55a1"]
+[ext_resource type="Texture2D" uid="uid://b8pjtf0jlxsx1" path="res://Assets/UI/SOUND_ON/rotations/SOUND_ON.png" id="41_dqj3d"]
+[ext_resource type="Texture2D" uid="uid://dslp8yrloe6lk" path="res://Assets/UI/SOUND_OFF/rotations/SOUND_OFF.png" id="42_f6yay"]
+[ext_resource type="AudioStream" uid="uid://cd6mpassbqulu" path="res://Assets/SFX/Modified Gun Blasts/MA_Designed_ModifiedGunBlasts_1.wav" id="43_ao2s2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8vrlf"]
+radius = 37.0
+height = 80.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1vivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vmcrb")
+}],
+"loop": 1,
+"name": &"idle_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_teras")
+}],
+"loop": 1,
+"name": &"idle_north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8p516")
+}],
+"loop": 1,
+"name": &"idle_south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_fvoow")
+}],
+"loop": 1,
+"name": &"idle_west",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.4,
+"texture": ExtResource("6_v5fqo")
+}, {
+"duration": 0.4,
+"texture": ExtResource("7_yf17c")
+}, {
+"duration": 0.4,
+"texture": ExtResource("8_awd2i")
+}, {
+"duration": 0.4,
+"texture": ExtResource("9_o2sks")
+}, {
+"duration": 0.4,
+"texture": ExtResource("10_3rw25")
+}, {
+"duration": 0.4,
+"texture": ExtResource("11_u4y2r")
+}, {
+"duration": 0.4,
+"texture": ExtResource("12_tbv6f")
+}, {
+"duration": 0.4,
+"texture": ExtResource("13_vp15a")
+}],
+"loop": 1,
+"name": &"run_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.4,
+"texture": ExtResource("14_fayk8")
+}, {
+"duration": 0.4,
+"texture": ExtResource("15_ddly5")
+}, {
+"duration": 0.4,
+"texture": ExtResource("16_omi2y")
+}, {
+"duration": 0.4,
+"texture": ExtResource("17_75iyv")
+}, {
+"duration": 0.4,
+"texture": ExtResource("18_yrofn")
+}, {
+"duration": 0.4,
+"texture": ExtResource("19_5gg6q")
+}, {
+"duration": 0.4,
+"texture": ExtResource("20_wenux")
+}, {
+"duration": 0.4,
+"texture": ExtResource("21_vy33c")
+}],
+"loop": 1,
+"name": &"run_north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.4,
+"texture": ExtResource("22_h1ppb")
+}, {
+"duration": 0.4,
+"texture": ExtResource("23_k22kr")
+}, {
+"duration": 0.4,
+"texture": ExtResource("24_h4i3a")
+}, {
+"duration": 0.4,
+"texture": ExtResource("25_rocfp")
+}, {
+"duration": 0.4,
+"texture": ExtResource("26_uytvf")
+}, {
+"duration": 0.4,
+"texture": ExtResource("27_s7lb4")
+}, {
+"duration": 0.4,
+"texture": ExtResource("28_ed4yo")
+}, {
+"duration": 0.4,
+"texture": ExtResource("29_fsa4a")
+}],
+"loop": 1,
+"name": &"run_south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.4,
+"texture": ExtResource("30_6f3s4")
+}, {
+"duration": 0.4,
+"texture": ExtResource("31_l3y8b")
+}, {
+"duration": 0.4,
+"texture": ExtResource("32_ujsok")
+}, {
+"duration": 0.4,
+"texture": ExtResource("33_txwsf")
+}, {
+"duration": 0.4,
+"texture": ExtResource("34_i10l2")
+}, {
+"duration": 0.4,
+"texture": ExtResource("35_fgqou")
+}, {
+"duration": 0.4,
+"texture": ExtResource("36_01r87")
+}, {
+"duration": 0.4,
+"texture": ExtResource("37_jhxql")
+}],
+"loop": 1,
+"name": &"run_west",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vivr"]
+bg_color = Color(0.9674534, 0.3788183, 0.34369302, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8vrlf"]
+bg_color = Color(0.21859387, 0.69114107, 0.54717815, 1)
+
+[node name="Player" type="CharacterBody2D" unique_id=835829573]
+script = ExtResource("1_y6y60")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1093273043]
+position = Vector2(-5, 48)
+shape = SubResource("CapsuleShape2D_8vrlf")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=13229589]
+limit_left = 0
+limit_bottom = 720
+position_smoothing_enabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1530333914]
+position = Vector2(-7.999998, 51.00001)
+scale = Vector2(2.5625, 2.6221597)
+sprite_frames = SubResource("SpriteFrames_1vivr")
+animation = &"run_north"
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=2069677175]
+script = ExtResource("38_ilb4b")
+
+[node name="HealthBar" type="ProgressBar" parent="UI" unique_id=752171307]
+offset_left = 32.0
+offset_top = 25.0
+offset_right = 349.0
+offset_bottom = 52.0
+theme_override_styles/background = SubResource("StyleBoxFlat_1vivr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8vrlf")
+
+[node name="BtnMusic" type="TextureButton" parent="UI" unique_id=1742890579]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 800.0
+offset_right = -385.0
+offset_bottom = -632.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("39_tlew5")
+texture_pressed = ExtResource("40_h55a1")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[node name="BtnSound" type="TextureButton" parent="UI" unique_id=169403419]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 900.0
+offset_right = -285.0
+offset_bottom = -632.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("41_dqj3d")
+texture_pressed = ExtResource("42_f6yay")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[node name="LbGold" type="Label" parent="UI" unique_id=487680168]
+offset_left = 380.0
+offset_top = 25.0
+offset_right = 420.0
+offset_bottom = 48.0
+
+[node name="LbShield" type="Label" parent="UI" unique_id=281207920]
+offset_left = 530.0
+offset_top = 25.0
+offset_right = 570.0
+offset_bottom = 48.0
+
+[node name="SoundShoot" type="AudioStreamPlayer2D" parent="." unique_id=615613685]
+stream = ExtResource("43_ao2s2")
+bus = &"SFX"
+
+[connection signal="toggled" from="UI/BtnMusic" to="UI" method="_on_btn_music_toggled"]
+[connection signal="toggled" from="UI/BtnSound" to="UI" method="_on_btn_sound_toggled"]

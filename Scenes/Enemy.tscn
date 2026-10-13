@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://hhbn36gu787m"]
+
+[ext_resource type="Script" uid="uid://dvo3xkbk4ofb" path="res://Scenes/enemy.gd" id="1_rm7px"]
+[ext_resource type="Texture2D" uid="uid://coby2t3l5uarm" path="res://Assets/Spider/Idle/animations/Running/east/frame_000.png" id="2_5yix0"]
+[ext_resource type="Texture2D" uid="uid://cwkba0op14sa0" path="res://Assets/Spider/Idle/animations/Running/east/frame_001.png" id="3_imorw"]
+[ext_resource type="Texture2D" uid="uid://b5pl3ws083q1s" path="res://Assets/Spider/Idle/animations/Running/east/frame_002.png" id="4_0vprv"]
+[ext_resource type="Texture2D" uid="uid://dij5gkgwnwwxu" path="res://Assets/Spider/Idle/animations/Running/east/frame_003.png" id="5_ovthj"]
+[ext_resource type="Texture2D" uid="uid://dxu34jd6fi3y4" path="res://Assets/Spider/Idle/animations/Running/east/frame_004.png" id="6_l2hgq"]
+[ext_resource type="Texture2D" uid="uid://tabsj2csh7rh" path="res://Assets/Spider/Idle/animations/Running/east/frame_005.png" id="7_1vdrv"]
+[ext_resource type="Texture2D" uid="uid://cb886xspidjs4" path="res://Assets/Spider/Idle/animations/Running/east/frame_006.png" id="8_5sdbb"]
+[ext_resource type="Texture2D" uid="uid://150wi6nxu557" path="res://Assets/Spider/Idle/animations/Running/east/frame_007.png" id="9_hfgpu"]
+[ext_resource type="Texture2D" uid="uid://nb8nqxph6yky" path="res://Assets/Spider/Idle/animations/Running/west/frame_000.png" id="10_xju7k"]
+[ext_resource type="Texture2D" uid="uid://d04e15jtke2b2" path="res://Assets/Spider/Idle/animations/Running/west/frame_001.png" id="11_c8a7u"]
+[ext_resource type="Texture2D" uid="uid://btud7gg0edo1v" path="res://Assets/Spider/Idle/animations/Running/west/frame_002.png" id="12_tivof"]
+[ext_resource type="Texture2D" uid="uid://c3b3u3pkgxumx" path="res://Assets/Spider/Idle/animations/Running/west/frame_003.png" id="13_ysecm"]
+[ext_resource type="Texture2D" uid="uid://burvhqmcsgw7o" path="res://Assets/Spider/Idle/animations/Running/west/frame_004.png" id="14_bly65"]
+[ext_resource type="Texture2D" uid="uid://7dcoy3ygo13q" path="res://Assets/Spider/Idle/animations/Running/west/frame_005.png" id="15_cjbcs"]
+[ext_resource type="Texture2D" uid="uid://bgvhky7e63oe7" path="res://Assets/Spider/Idle/animations/Running/west/frame_006.png" id="16_26boc"]
+[ext_resource type="Texture2D" uid="uid://d1qog5yhtx27" path="res://Assets/Spider/Idle/animations/Running/west/frame_007.png" id="17_q1bo7"]
+[ext_resource type="AudioStream" uid="uid://dxut03qiy6kfn" path="res://Assets/SFX/MA_Originals_Various Alarms_Buzzy Siren.wav" id="18_5yix0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8vrlf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5yix0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_imorw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0vprv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ovthj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_l2hgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1vdrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5sdbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hfgpu")
+}],
+"loop": 1,
+"name": &"Running_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_xju7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_c8a7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_tivof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ysecm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_bly65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cjbcs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_26boc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_q1bo7")
+}],
+"loop": 1,
+"name": &"Running_west",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5gy4"]
+size = Vector2(62.71875, 56.515625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vrlf"]
+size = Vector2(55.90625, 46.28125)
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1244043200]
+script = ExtResource("1_rm7px")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1765968478]
+scale = Vector2(1.34375, 1.359375)
+sprite_frames = SubResource("SpriteFrames_8vrlf")
+animation = &"Running_west"
+
+[node name="DamageZone" type="Area2D" parent="." unique_id=885136674]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone" unique_id=1828232210]
+shape = SubResource("RectangleShape2D_v5gy4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1934901115]
+shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="WarningSound" type="AudioStreamPlayer2D" parent="." unique_id=1847428777]
+stream = ExtResource("18_5yix0")
+bus = &"SFX"
+
+[connection signal="body_entered" from="DamageZone" to="." method="_on_damage_zone_body_entered"]

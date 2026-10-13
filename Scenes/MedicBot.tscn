@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bfk4hg8wci0uk"]
+
+[ext_resource type="Script" uid="uid://b3a73s4iy5b1r" path="res://Scenes/medic_bot.gd" id="1_d4aaw"]
+[ext_resource type="Texture2D" uid="uid://ro85ndjnejg0" path="res://Assets/drone/Idle/rotations/south.png" id="2_s2way"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1vivr"]
+radius = 250.56935
+
+[node name="MedicBot" type="Area2D" unique_id=124783437]
+script = ExtResource("1_d4aaw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=262012702]
+shape = SubResource("CircleShape2D_1vivr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1221912827]
+texture = ExtResource("2_s2way")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

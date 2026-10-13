@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://oltqmvxoymd1"]
+
+[ext_resource type="Script" uid="uid://dpuvc6faku6l8" path="res://Scenes/gold_drop.gd" id="1_qxv08"]
+[ext_resource type="Texture2D" uid="uid://bmjjrgvesx8dd" path="res://Assets/UI/A_2D_pixel_art_game_asset_of_a/rotations/A_2D_pixel_art_game_asset_of_a.png" id="2_a0p8p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1vivr"]
+
+[node name="GoldDrop" type="Area2D" unique_id=1894752326]
+script = ExtResource("1_qxv08")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1499743078]
+texture = ExtResource("2_a0p8p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=583366297]
+shape = SubResource("CircleShape2D_1vivr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,41 @@
+{
+  "group_id": "0a450bbd-046d-4293-9031-57e0871812c0",
+  "objects": [
+    {
+      "id": "651d52c0-1521-4274-8d92-7ef8d9d4d783",
+      "name": "base",
+      "prompt": "32-bit pixel art, 2D platformer game asset, VFX. A fast-moving sci-fi plasma bullet projectile. Bright white glowing core with a sharp neon blue energy motion trail. Modern laser blast, aerodynamic shape, horizontal movement, flat 2D, isolated on clean white background.",
+      "size": {
+        "width": 48,
+        "height": 48
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/32-bit_pixel_art_2D_platforme.png"
+      },
+      "animations": {
+        "32-bit_pixel_art_2D_platformer_game_asset_sprite": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_000.png",
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_001.png",
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_002.png",
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_003.png",
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_004.png",
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_005.png",
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_006.png",
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_007.png",
+                "animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_008.png"
+              ],
+              "frame_count": 9
+            }
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-09-08T05:48:21.352037"
+}

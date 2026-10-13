@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://c8eyxlwaphqw3"]
+
+[ext_resource type="Script" uid="uid://ddwtphk0tqsui" path="res://Scenes/turret.gd" id="1_f0vv0"]
+[ext_resource type="Texture2D" uid="uid://b5g6khhwgalpf" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_000.png" id="2_48cgw"]
+[ext_resource type="Texture2D" uid="uid://bvk3f6nbkjur3" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_001.png" id="3_o6d8b"]
+[ext_resource type="Texture2D" uid="uid://d0p4exs1v6uqw" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_002.png" id="4_s15a5"]
+[ext_resource type="Texture2D" uid="uid://xekh6lmtfag1" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_003.png" id="5_2vcc1"]
+[ext_resource type="Texture2D" uid="uid://bqft00xr4v4cy" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_004.png" id="6_3fn38"]
+[ext_resource type="Texture2D" uid="uid://dsupglku3p05r" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_005.png" id="7_5vr65"]
+[ext_resource type="Texture2D" uid="uid://cte6kmiwh28i7" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_006.png" id="8_kaod2"]
+[ext_resource type="Texture2D" uid="uid://pas7amrycrmj" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_007.png" id="9_rv0g7"]
+[ext_resource type="Texture2D" uid="uid://b6ycuffd3qf8v" path="res://Assets/turret/turn_left/animations/ngam_ban/unknown/frame_008.png" id="10_533wp"]
+[ext_resource type="Texture2D" uid="uid://q3k63bj6q4xn" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_000.png" id="11_a4f1e"]
+[ext_resource type="Texture2D" uid="uid://rs2jprfnps67" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_001.png" id="12_8weoq"]
+[ext_resource type="Texture2D" uid="uid://butr5321gyx4b" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_002.png" id="13_msy54"]
+[ext_resource type="Texture2D" uid="uid://bgb15ahkhlj4" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_003.png" id="14_hqm46"]
+[ext_resource type="Texture2D" uid="uid://dcdvlgtdjoqfv" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_004.png" id="15_32p3y"]
+[ext_resource type="Texture2D" uid="uid://b6b6b3dmx0gps" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_005.png" id="16_btaxp"]
+[ext_resource type="Texture2D" uid="uid://bh1rykw08hk3d" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_006.png" id="17_sr1hj"]
+[ext_resource type="Texture2D" uid="uid://vnlqv0ot0dnj" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_007.png" id="18_v7vxs"]
+[ext_resource type="Texture2D" uid="uid://cix8218s7yctx" path="res://Assets/turret/turn_left/animations/ban/unknown/frame_008.png" id="19_emq0p"]
+[ext_resource type="Texture2D" uid="uid://dc3qstssci58h" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_000.png" id="20_ukduw"]
+[ext_resource type="Texture2D" uid="uid://dq6et0bubqred" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_001.png" id="21_4x0i8"]
+[ext_resource type="Texture2D" uid="uid://cq6tmhuhcbuod" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_002.png" id="22_k1oqu"]
+[ext_resource type="Texture2D" uid="uid://dwdb1pjwema4" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_003.png" id="23_uubi0"]
+[ext_resource type="Texture2D" uid="uid://nmns8ldp6eqk" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_004.png" id="24_k6e3d"]
+[ext_resource type="Texture2D" uid="uid://dk6t5cslmrsom" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_005.png" id="25_s41m6"]
+[ext_resource type="Texture2D" uid="uid://dwkvpntp5sqss" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_006.png" id="26_dhk8q"]
+[ext_resource type="Texture2D" uid="uid://e4mluysmv671" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_007.png" id="27_mrbjj"]
+[ext_resource type="Texture2D" uid="uid://dmmjnf2egar7l" path="res://Assets/turret/turn_left/animations/idle/unknown/frame_008.png" id="28_dqgd3"]
+[ext_resource type="AudioStream" uid="uid://bpw5upjhpdlf1" path="res://Assets/SFX/Modified Gun Blasts/MA_Designed_ModifiedGunBlasts_2.wav" id="29_2iym6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(106.875, 100.875)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8vrlf"]
+animations = [{
+"frames": [{
+"duration": 0.6,
+"texture": ExtResource("2_48cgw")
+}, {
+"duration": 0.6,
+"texture": ExtResource("3_o6d8b")
+}, {
+"duration": 0.6,
+"texture": ExtResource("4_s15a5")
+}, {
+"duration": 0.6,
+"texture": ExtResource("5_2vcc1")
+}, {
+"duration": 0.6,
+"texture": ExtResource("6_3fn38")
+}, {
+"duration": 0.6,
+"texture": ExtResource("7_5vr65")
+}, {
+"duration": 0.6,
+"texture": ExtResource("8_kaod2")
+}, {
+"duration": 0.6,
+"texture": ExtResource("9_rv0g7")
+}, {
+"duration": 0.6,
+"texture": ExtResource("10_533wp")
+}],
+"loop": 1,
+"name": &"alert",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.6,
+"texture": ExtResource("11_a4f1e")
+}, {
+"duration": 1.6,
+"texture": ExtResource("12_8weoq")
+}, {
+"duration": 1.6,
+"texture": ExtResource("13_msy54")
+}, {
+"duration": 1.6,
+"texture": ExtResource("14_hqm46")
+}, {
+"duration": 1.6,
+"texture": ExtResource("15_32p3y")
+}, {
+"duration": 1.6,
+"texture": ExtResource("16_btaxp")
+}, {
+"duration": 1.6,
+"texture": ExtResource("17_sr1hj")
+}, {
+"duration": 1.6,
+"texture": ExtResource("18_v7vxs")
+}, {
+"duration": 1.6,
+"texture": ExtResource("19_emq0p")
+}],
+"loop": 1,
+"name": &"fire",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("20_ukduw")
+}, {
+"duration": 0.3,
+"texture": ExtResource("21_4x0i8")
+}, {
+"duration": 0.3,
+"texture": ExtResource("22_k1oqu")
+}, {
+"duration": 0.3,
+"texture": ExtResource("23_uubi0")
+}, {
+"duration": 0.3,
+"texture": ExtResource("24_k6e3d")
+}, {
+"duration": 0.3,
+"texture": ExtResource("25_s41m6")
+}, {
+"duration": 0.3,
+"texture": ExtResource("26_dhk8q")
+}, {
+"duration": 0.3,
+"texture": ExtResource("27_mrbjj")
+}, {
+"duration": 0.3,
+"texture": ExtResource("28_dqgd3")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1vivr"]
+radius = 784.03125
+
+[node name="Turret" type="StaticBody2D" unique_id=1312625905]
+script = ExtResource("1_f0vv0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1128124122]
+shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1353060974]
+scale = Vector2(2.5416672, 2.2291663)
+sprite_frames = SubResource("SpriteFrames_8vrlf")
+animation = &"fire"
+autoplay = "idle"
+
+[node name="DetectionZone" type="Area2D" parent="." unique_id=1035406460]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionZone" unique_id=281560363]
+shape = SubResource("CircleShape2D_1vivr")
+
+[node name="Muzzle" type="Marker2D" parent="." unique_id=1486201404]
+position = Vector2(-41, -16)
+
+[node name="FireTimer" type="Timer" parent="." unique_id=1761655202]
+wait_time = 2.0
+
+[node name="SoundShoot" type="AudioStreamPlayer2D" parent="." unique_id=1067475777]
+stream = ExtResource("29_2iym6")
+bus = &"SFX"
+
+[connection signal="body_entered" from="DetectionZone" to="." method="_on_detection_zone_body_entered"]
+[connection signal="body_exited" from="DetectionZone" to="." method="_on_detection_zone_body_exited"]
+[connection signal="timeout" from="FireTimer" to="." method="_on_fire_timer_timeout"]

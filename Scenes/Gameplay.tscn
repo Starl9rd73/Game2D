@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://dkobq0h61ch7a"]
+
+[ext_resource type="PackedScene" uid="uid://buku4qlgfffyb" path="res://Scenes/Player.tscn" id="2_rhmiw"]
+[ext_resource type="Texture2D" uid="uid://j1qggypvk236" path="res://Assets/demoGamePlay.png" id="2_tdndw"]
+[ext_resource type="PackedScene" uid="uid://c8eyxlwaphqw3" path="res://Scenes/Turret.tscn" id="5_uotjs"]
+[ext_resource type="PackedScene" uid="uid://ddvjwg3hh8tlg" path="res://Scenes/bgm.tscn" id="7_uotjs"]
+[ext_resource type="PackedScene" uid="uid://cnh5spj0m8t0x" path="res://Scenes/enemy_spawner.tscn" id="8_uotjs"]
+[ext_resource type="Script" uid="uid://o0hj6u8ro556" path="res://Scenes/portal_to_level_2.gd" id="9_uotjs"]
+[ext_resource type="Script" uid="uid://cymexwlgq27ri" path="res://Scenes/trap.gd" id="39_jawsd"]
+[ext_resource type="Texture2D" uid="uid://n475grhidce6" path="res://Assets/acid trap.png" id="40_vufuq"]
+[ext_resource type="PackedScene" uid="uid://hhbn36gu787m" path="res://Scenes/Enemy.tscn" id="69_n33lw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vrlf"]
+size = Vector2(1290.125, 20.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5gy4"]
+size = Vector2(212.75, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbdty"]
+size = Vector2(55, 132)
+
+[node name="Gameplay" type="Node2D" unique_id=14375000]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=746780241]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=971778426]
+motion_mirroring = Vector2(1280, 720)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=859573455]
+position = Vector2(0, 0.99999905)
+scale = Vector2(0.46475288, 0.46940103)
+texture = ExtResource("2_tdndw")
+centered = false
+
+[node name="Player" parent="." unique_id=835829573 instance=ExtResource("2_rhmiw")]
+position = Vector2(90, 523)
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=603338423]
+position = Vector2(203, 603)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground" unique_id=1641030499]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=747791572]
+position = Vector2(429, 35)
+shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Ground" unique_id=144062339]
+position = Vector2(2806, 40)
+shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Ground" unique_id=232709563]
+position = Vector2(1713, 34)
+shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="Trap" type="Area2D" parent="." unique_id=1618469991]
+script = ExtResource("39_jawsd")
+
+[node name="Sprite2D" type="Sprite2D" parent="Trap" unique_id=1942724191]
+position = Vector2(968.5313, 642.125)
+scale = Vector2(1.9645996, 0.88964856)
+texture = ExtResource("40_vufuq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trap" unique_id=1278159388]
+position = Vector2(959, 630)
+shape = SubResource("RectangleShape2D_v5gy4")
+
+[node name="Turret" parent="." unique_id=1312625905 instance=ExtResource("5_uotjs")]
+position = Vector2(1158, 309)
+
+[node name="Enemy" parent="." unique_id=1098934652 instance=ExtResource("69_n33lw")]
+position = Vector2(785, 599)
+
+[node name="BGM" parent="." unique_id=1830343691 instance=ExtResource("7_uotjs")]
+
+[node name="EnemySpawner" parent="." unique_id=1174119513 instance=ExtResource("8_uotjs")]
+
+[node name="PortalToLevel2" type="Area2D" parent="." unique_id=1337235080]
+script = ExtResource("9_uotjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortalToLevel2" unique_id=394527348]
+position = Vector2(1210.5, 559)
+shape = SubResource("RectangleShape2D_qbdty")
+
+[connection signal="body_entered" from="Trap" to="Trap" method="_on_body_entered"]
+[connection signal="body_entered" from="PortalToLevel2" to="PortalToLevel2" method="_on_body_entered"]

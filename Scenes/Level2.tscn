@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://bhacb5rkj1ggk"]
+
+[ext_resource type="Texture2D" uid="uid://sp5p85osbjnb" path="res://Assets/Map/pixellab-tileset-dark-grey-reinforced-concrete-with-glowing-blue-793ef8ca.png" id="1_n3cqh"]
+[ext_resource type="Texture2D" uid="uid://bcjoet7nfq6fm" path="res://Assets/Map/2D_pixel_art_parallax_background_for_side-scroller_game_Cybe (1).jpg" id="2_jriq2"]
+[ext_resource type="PackedScene" uid="uid://buku4qlgfffyb" path="res://Scenes/Player.tscn" id="3_ehjmi"]
+[ext_resource type="PackedScene" uid="uid://hhbn36gu787m" path="res://Scenes/Enemy.tscn" id="4_p4u3k"]
+[ext_resource type="PackedScene" uid="uid://c8eyxlwaphqw3" path="res://Scenes/Turret.tscn" id="5_70df5"]
+[ext_resource type="PackedScene" uid="uid://bfk4hg8wci0uk" path="res://Scenes/MedicBot.tscn" id="6_jriq2"]
+[ext_resource type="Script" uid="uid://c3ra6gdrpeejq" path="res://Scenes/portal_to_level_3.gd" id="7_ehjmi"]
+[ext_resource type="PackedScene" uid="uid://cnh5spj0m8t0x" path="res://Scenes/enemy_spawner.tscn" id="8_p4u3k"]
+[ext_resource type="PackedScene" uid="uid://ddvjwg3hh8tlg" path="res://Scenes/bgm.tscn" id="9_70df5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ejprb"]
+texture = ExtResource("1_n3cqh")
+0:0/0 = 0
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_8vrlf"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ejprb")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(100.5, 162.25)
+
+[node name="Level2" type="Node2D" unique_id=919241036]
+
+[node name="Enemy" parent="." unique_id=1244043200 instance=ExtResource("4_p4u3k")]
+position = Vector2(1030, 549)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=386907973]
+tile_set = SubResource("TileSet_8vrlf")
+format = 2
+layer_0/tile_data = PackedInt32Array(2359296, 196608, 0, 2359297, 196608, 0, 2359298, 196608, 0, 2359299, 196608, 0, 2359300, 196608, 0, 2359301, 196608, 0, 2359302, 196608, 0, 2359303, 196608, 0, 2359304, 196608, 0, 2359305, 196608, 0, 2359306, 196608, 0, 2359307, 196608, 0, 2359308, 196608, 0, 2359309, 196608, 0, 2359310, 196608, 0, 2359311, 196608, 0, 2359312, 196608, 0, 2359313, 196608, 0, 2359314, 196608, 0, 2359315, 196608, 0, 2359316, 196608, 0, 2359317, 196608, 0, 2359318, 196608, 0, 2359319, 196608, 0, 2359320, 196608, 0, 2359321, 196608, 0, 2359322, 196608, 0, 2359323, 196608, 0, 2359324, 196608, 0, 2359325, 196608, 0, 2359326, 196608, 0, 2359327, 196608, 0, 2359328, 196608, 0, 2359329, 196608, 0, 2359330, 196608, 0, 2359331, 196608, 0, 2359332, 196608, 0, 2359333, 196608, 0, 2359334, 196608, 0, 2359335, 196608, 0, 2359336, 196608, 0, 2359337, 196608, 0, 2359338, 196608, 0, 2359339, 196608, 0, 2359340, 196608, 0, 2359341, 196608, 0, 2359342, 196608, 0, 2359343, 196608, 0, 2359344, 196608, 0, 2359345, 196608, 0, 2359346, 196608, 0, 2359347, 196608, 0, 2359348, 196608, 0, 2359349, 196608, 0, 2359350, 196608, 0, 2359351, 196608, 0, 2359352, 196608, 0, 2359353, 196608, 0, 2359354, 196608, 0, 2359355, 196608, 0, 2359356, 196608, 0, 2359357, 196608, 0, 2359358, 196608, 0, 2359359, 196608, 0, 2359360, 196608, 0, 2359361, 196608, 0, 2359362, 196608, 0, 2359363, 196608, 0, 2359364, 196608, 0, 2359365, 196608, 0, 2359366, 196608, 0, 2359367, 196608, 0, 2359368, 196608, 0, 2359369, 196608, 0, 2359370, 196608, 0, 2359371, 196608, 0, 2359372, 196608, 0, 2359373, 196608, 0, 2359374, 196608, 0, 2359375, 196608, 0)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1726201798]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1873444147]
+texture_repeat = 3
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(1248, 832)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1674350226]
+texture_repeat = 3
+position = Vector2(642.00006, 363)
+scale = Vector2(1.0256411, 0.87019235)
+texture = ExtResource("2_jriq2")
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." unique_id=835829573 instance=ExtResource("3_ehjmi")]
+position = Vector2(67, 488)
+
+[node name="Turret" parent="." unique_id=1312625905 instance=ExtResource("5_70df5")]
+position = Vector2(1202, 529)
+
+[node name="MedicBot" parent="." unique_id=124783437 instance=ExtResource("6_jriq2")]
+position = Vector2(723, 430)
+
+[node name="PortalToLevel3" type="Area2D" parent="." unique_id=313389844]
+script = ExtResource("7_ehjmi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortalToLevel3" unique_id=1197698972]
+position = Vector2(898, 503)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="Sprite2D" type="Sprite2D" parent="PortalToLevel3" unique_id=1370796641]
+
+[node name="EnemySpawner" parent="." unique_id=1174119513 instance=ExtResource("8_p4u3k")]
+wait_time = 1.0
+
+[node name="BGM" parent="EnemySpawner" unique_id=1830343691 instance=ExtResource("9_70df5")]
+
+[connection signal="body_entered" from="PortalToLevel3" to="PortalToLevel3" method="_on_body_entered"]

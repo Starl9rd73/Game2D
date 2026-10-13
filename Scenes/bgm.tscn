@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ddvjwg3hh8tlg"]
+
+[ext_resource type="AudioStream" uid="uid://d07obg20qo3sr" path="res://Assets/music/prettyjohn1-suspense-cyberpunk-517449.mp3" id="1_2kasm"]
+
+[node name="BGM" type="AudioStreamPlayer2D" unique_id=1830343691]
+stream = ExtResource("1_2kasm")
+autoplay = true
+bus = &"Music"

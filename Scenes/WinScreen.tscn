@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bpeqgdub8d3d"]
+
+[ext_resource type="Script" uid="uid://b8xq8aspudnwb" path="res://Scenes/win_screen.gd" id="1_68w7f"]
+[ext_resource type="PackedScene" uid="uid://ddvjwg3hh8tlg" path="res://Scenes/bgm.tscn" id="2_82r0j"]
+[ext_resource type="Texture2D" uid="uid://c7x4v3y4hwqf6" path="res://Assets/2D_pixel_art_game_background_victory_screen_futuristic_high-.jpg" id="3_fy21p"]
+
+[node name="Control" type="Control" unique_id=1416416078]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_68w7f")
+
+[node name="BGM" parent="." unique_id=1830343691 instance=ExtResource("2_82r0j")]
+position = Vector2(282, 459)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=289158227]
+position = Vector2(640, 358.5)
+scale = Vector2(1.0224359, 0.86658657)
+texture = ExtResource("3_fy21p")
+
+[node name="Label" type="Label" parent="." unique_id=1306847274]
+layout_mode = 0
+offset_left = 282.0
+offset_top = 459.0
+offset_right = 1039.0
+offset_bottom = 624.0
+theme_override_colors/font_color = Color(1, 0.74509805, 0.24705882, 1)
+theme_override_font_sizes/font_size = 38
+text = "\"SYSTEM: MISSION ACCOMPLISHED. 
+CORE SYNCHRONIZATION SUCCESSFUL. 
+WELCOME TO THE NEW ERA, OPERATIVE.\""
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=953246352]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.031000001
+anchor_bottom = 0.056
+offset_left = 1132.0
+offset_top = 617.0
+offset_right = 1230.32
+offset_bottom = 736.68
+
+[node name="BtnReplay" type="Button" parent="VBoxContainer" unique_id=2146470308]
+layout_mode = 2
+text = "RESTART"
+
+[node name="BtnHome" type="Button" parent="VBoxContainer" unique_id=1204729416]
+layout_mode = 2
+text = "HOME SCREEN"
+
+[node name="BtnSetting" type="Button" parent="VBoxContainer" unique_id=931185310]
+layout_mode = 2
+text = "SETTING"
+
+[connection signal="pressed" from="VBoxContainer/BtnReplay" to="." method="_on_btn_replay_pressed"]
+[connection signal="pressed" from="VBoxContainer/BtnHome" to="." method="_on_btn_home_pressed"]
+[connection signal="pressed" from="VBoxContainer/BtnSetting" to="." method="_on_btn_setting_pressed"]

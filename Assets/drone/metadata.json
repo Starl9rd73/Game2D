@@ -1,0 +1,36 @@
+{
+  "group_id": "80b01346-ccff-4f7a-baff-50344de099ca",
+  "states": [
+    {
+      "character": {
+        "id": "f9afe475-c75c-4b52-a760-c7516b28abf4",
+        "name": "Idle",
+        "prompt": "2D pixel art cyberpunk medical robot, small floating floating drone with a glowing red cross medical symbol, sleek white and metallic grey casing, green neon glowing eye scanner, 16-bit style, isolated on transparent background, game asset. drone\n",
+        "size": {
+          "width": 48,
+          "height": 48
+        },
+        "template_id": "custom",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-09-29T07:17:48.491076+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-09-29T07:20:15.938060"
+}

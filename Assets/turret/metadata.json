@@ -1,0 +1,92 @@
+{
+  "group_id": "86dffcba-7c00-464f-ae52-f5418c336d7d",
+  "objects": [
+    {
+      "id": "189ef5b7-a3bd-40e8-9841-da17e5da5e7f",
+      "name": "side view",
+      "prompt": "32-bit pixel art, 2D platformer game asset. A modern sci-fi mounted security turret on a heavy mechanical swivel base. Sleek angular design but heavily rusted, weathered metal, peeling dark paint, orange rust stains. Glowing neon blue targeting lens. Bio-cyberpunk aesthetic, side view, flat 2D, isolated on clean white background.",
+      "size": {
+        "width": 48,
+        "height": 48
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/side_view.png"
+      },
+      "animations": {}
+    },
+    {
+      "id": "3867e8d9-50bb-4eb0-82bb-48aa100fa1bf",
+      "name": "turn left",
+      "prompt": "32-bit pixel art, 2D platformer game asset. A modern sci-fi mounted security turret on a heavy mechanical swivel base. Sleek angular design but heavily rusted, weathered metal, peeling dark paint, orange rust stains. Glowing neon blue targeting lens. Bio-cyberpunk aesthetic, side view, flat 2D, isolated on clean white background.",
+      "size": {
+        "width": 48,
+        "height": 48
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/turn_left.png"
+      },
+      "animations": {
+        "ngam_ban": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/ngam_ban/unknown/frame_000.png",
+                "animations/ngam_ban/unknown/frame_001.png",
+                "animations/ngam_ban/unknown/frame_002.png",
+                "animations/ngam_ban/unknown/frame_003.png",
+                "animations/ngam_ban/unknown/frame_004.png",
+                "animations/ngam_ban/unknown/frame_005.png",
+                "animations/ngam_ban/unknown/frame_006.png",
+                "animations/ngam_ban/unknown/frame_007.png",
+                "animations/ngam_ban/unknown/frame_008.png"
+              ],
+              "frame_count": 9
+            }
+          }
+        },
+        "idle": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/idle/unknown/frame_000.png",
+                "animations/idle/unknown/frame_001.png",
+                "animations/idle/unknown/frame_002.png",
+                "animations/idle/unknown/frame_003.png",
+                "animations/idle/unknown/frame_004.png",
+                "animations/idle/unknown/frame_005.png",
+                "animations/idle/unknown/frame_006.png",
+                "animations/idle/unknown/frame_007.png",
+                "animations/idle/unknown/frame_008.png"
+              ],
+              "frame_count": 9
+            }
+          }
+        },
+        "ban": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/ban/unknown/frame_000.png",
+                "animations/ban/unknown/frame_001.png",
+                "animations/ban/unknown/frame_002.png",
+                "animations/ban/unknown/frame_003.png",
+                "animations/ban/unknown/frame_004.png",
+                "animations/ban/unknown/frame_005.png",
+                "animations/ban/unknown/frame_006.png",
+                "animations/ban/unknown/frame_007.png",
+                "animations/ban/unknown/frame_008.png"
+              ],
+              "frame_count": 9
+            }
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-09-08T05:27:08.308293"
+}

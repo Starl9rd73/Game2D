@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://c08fjd75ilpro"]
+
+[ext_resource type="Texture2D" uid="uid://dq46h1t4pbrk5" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_000.png" id="2_jl2hs"]
+[ext_resource type="Texture2D" uid="uid://cth7qjvell2ju" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_001.png" id="3_7gbgb"]
+[ext_resource type="Texture2D" uid="uid://6rtdka7pajo" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_002.png" id="4_0f6np"]
+[ext_resource type="Texture2D" uid="uid://1l2eug6lyakd" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_003.png" id="5_15xph"]
+[ext_resource type="Texture2D" uid="uid://d2grrvtep6nul" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_004.png" id="6_4q36y"]
+[ext_resource type="Texture2D" uid="uid://cp5m3smeacg0k" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_005.png" id="7_kd5ar"]
+[ext_resource type="Texture2D" uid="uid://daosce0i5e8x4" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_006.png" id="8_60wpv"]
+[ext_resource type="Texture2D" uid="uid://gpdve75ly50u" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_007.png" id="9_5byqj"]
+[ext_resource type="Texture2D" uid="uid://btxtewh0g5cfa" path="res://Assets/bullet/32-bit_pixel_art_2D_platforme/animations/32-bit_pixel_art_2D_platformer_game_asset_sprite/unknown/frame_008.png" id="10_t5n55"]
+
+[sub_resource type="GDScript" id="GDScript_huux0"]
+script/source = "extends Area2D
+
+# Tốc độ bay và sát thương của đạn
+var speed = 50
+var damage = 15
+
+func _physics_process(delta):
+	# transform.x giúp đạn luôn bay thẳng về phía mũi nhọn, bất kể súng xoay góc nào
+	position += transform.x * speed * delta
+
+# Khi đạn chạm vào một vật thể bất kỳ (Player hoặc Mặt đất)
+func _on_body_entered(body):
+	# Bỏ qua nếu đạn chạm vào chính Trụ súng (chống tự sát)
+	if body.name == \"Turret\":
+		return
+		
+	# Nếu trúng Player thì trừ máu
+	if body.name == \"Player\":
+		if body.has_method(\"take_damage\"):
+			body.take_damage(damage)
+			
+	# Chỉ tự hủy đạn khi trúng Player hoặc trúng Tường/Mặt đất
+	queue_free()
+
+# Khi viên đạn bay ra khỏi phạm vi camera (trượt mục tiêu)
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	# Xóa viên đạn để giải phóng bộ nhớ, chống giật lag
+	queue_free()
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v5gy4"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("2_jl2hs")
+}, {
+"duration": 0.2,
+"texture": ExtResource("3_7gbgb")
+}, {
+"duration": 0.2,
+"texture": ExtResource("4_0f6np")
+}, {
+"duration": 0.2,
+"texture": ExtResource("5_15xph")
+}, {
+"duration": 0.2,
+"texture": ExtResource("6_4q36y")
+}, {
+"duration": 0.2,
+"texture": ExtResource("7_kd5ar")
+}, {
+"duration": 0.2,
+"texture": ExtResource("8_60wpv")
+}, {
+"duration": 0.2,
+"texture": ExtResource("9_5byqj")
+}, {
+"duration": 0.2,
+"texture": ExtResource("10_t5n55")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 17.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbdty"]
+size = Vector2(30, 16)
+
+[node name="Bullet" type="Area2D" unique_id=368148223]
+script = SubResource("GDScript_huux0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1781714767]
+scale = Vector2(1.0000036, 0.9062505)
+sprite_frames = SubResource("SpriteFrames_v5gy4")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1387078766]
+position = Vector2(-5, -1)
+shape = SubResource("RectangleShape2D_qbdty")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=2139968776]
+position = Vector2(-34, -12)
+rect = Rect2(1, -2, 67, 29)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

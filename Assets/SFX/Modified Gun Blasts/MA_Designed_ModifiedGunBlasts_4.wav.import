@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://5xe21rnpirwo"
+path="res://.godot/imported/MA_Designed_ModifiedGunBlasts_4.wav-6509a7f2077530ec4e049bef6379a6e2.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Modified Gun Blasts/MA_Designed_ModifiedGunBlasts_4.wav"
+dest_files=["res://.godot/imported/MA_Designed_ModifiedGunBlasts_4.wav-6509a7f2077530ec4e049bef6379a6e2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

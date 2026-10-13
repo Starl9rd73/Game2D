@@ -1,0 +1,71 @@
+{
+  "group_id": "7e00cd65-ae01-455c-b041-ffbbc2277f75",
+  "states": [
+    {
+      "character": {
+        "id": "6745cb23-a356-44ae-811f-a384060840f2",
+        "name": "Idle",
+        "prompt": "32-bit pixel art, 2D platformer game asset sprite sheet. A rusted mechanical robot spider enemy with spindly, multi-jointed hydraulic legs and a central armored multi-eyed turret head. Dark weathered metal plating with glowing neon green circuit patterns and bright red optical sensors. Sharp metallic hydraulic claws at the tip of each leg. Top-down isometric side view. Isolated frame sequence on clean white background, horizontal layout. Frame 1-4: Idle animation with subtle twitching legs. Frame 5-10: Walking cycle with coordinated leg movement. Frame 11-14: Attack pose, rearing up on rear legs with claws in a striking position. Frame 15-18: Die animation, collapsing to the ground with legs splaying and sensors fading. Thick dark outlines, high contrast, bio-cyberpunk aesthetics.",
+        "size": {
+          "width": 48,
+          "height": 48
+        },
+        "template_id": "custom",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-09-10T04:26:13.221067+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Running": {
+            "east": [
+              "Idle/animations/Running/east/frame_000.png",
+              "Idle/animations/Running/east/frame_001.png",
+              "Idle/animations/Running/east/frame_002.png",
+              "Idle/animations/Running/east/frame_003.png",
+              "Idle/animations/Running/east/frame_004.png",
+              "Idle/animations/Running/east/frame_005.png",
+              "Idle/animations/Running/east/frame_006.png",
+              "Idle/animations/Running/east/frame_007.png"
+            ],
+            "west": [
+              "Idle/animations/Running/west/frame_000.png",
+              "Idle/animations/Running/west/frame_001.png",
+              "Idle/animations/Running/west/frame_002.png",
+              "Idle/animations/Running/west/frame_003.png",
+              "Idle/animations/Running/west/frame_004.png",
+              "Idle/animations/Running/west/frame_005.png",
+              "Idle/animations/Running/west/frame_006.png",
+              "Idle/animations/Running/west/frame_007.png"
+            ]
+          },
+          "Idle": {
+            "south": [
+              "Idle/animations/Idle/south/frame_000.png",
+              "Idle/animations/Idle/south/frame_001.png",
+              "Idle/animations/Idle/south/frame_002.png",
+              "Idle/animations/Idle/south/frame_003.png",
+              "Idle/animations/Idle/south/frame_004.png",
+              "Idle/animations/Idle/south/frame_005.png",
+              "Idle/animations/Idle/south/frame_006.png",
+              "Idle/animations/Idle/south/frame_007.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-09-10T04:47:32.417821"
+}
